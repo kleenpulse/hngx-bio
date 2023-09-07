@@ -83,7 +83,7 @@ main::after {
   z-index: 10;
   backdrop-filter: blur(10px);
   height: fit-content;
-  width: fit-content;
+  max-width: 500px;
   border: 1px solid #035087;
   border-radius: 20px;
 }
@@ -134,13 +134,30 @@ main::after {
   color: #000a2d;
   font-weight: 500;
   border-radius: 15px;
+  transition: all 0.3s ease;
 }
 .content a svg {
   width: 30px;
   height: 30px;
 }
+.content a:hover {
+  background: #000a2d;
+  color: #dcdcdc;
+}
+.content a:hover svg {
+  fill: #dcdcdc;
+}
 .content .link {
   display: flex;
   justify-content: end;
   padding-right: 1rem;
+}
+
+.time {
+  width: 500px;
+}
+@media screen and (max-width: 550px) {
+  .time {
+    width: 270px;
+  }
 }/*# sourceMappingURL=style.css.map */

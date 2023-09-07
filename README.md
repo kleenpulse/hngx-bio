@@ -1,1 +1,1 @@
-# hngx-bio
+# HNG-X Bio
