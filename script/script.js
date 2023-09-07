@@ -2,8 +2,8 @@ let currentDay = document.getElementById("currentDay");
 const currentTime = document.getElementById('currentTime');
 
 function updateUTCTime() {
-    const time = new Date().toLocaleTimeString('en-US');
-    currentTime.textContent = time
+    const time = new Date().getTime();
+    currentTime.textContent = time + ' ms'
 }
 function updateUTCDay() {
     const options = {
@@ -17,8 +17,6 @@ function updateUTCDay() {
 updateUTCTime();
 updateUTCDay();
 
-// Update the time every second (1000 milliseconds)
-setInterval(updateUTCTime, 1000);
 
 
 
