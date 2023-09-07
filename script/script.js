@@ -3,7 +3,7 @@ const currentTime = document.getElementById('currentTime');
 
 function updateUTCTime() {
     const time = new Date().getTime();
-    currentTime.textContent = time + ' ms'
+    currentTime.textContent = time
 }
 function updateUTCDay() {
     const options = {
