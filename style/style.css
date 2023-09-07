@@ -96,7 +96,7 @@ main::after {
 	z-index: 10;
 	backdrop-filter: blur(10px);
 	height: fit-content;
-	max-width: 500px;
+	max-width: 650px;
 	border: 1px solid #035087;
 	border-radius: 20px;
 }
@@ -155,7 +155,26 @@ main::after {
 }
 
 .time {
-	width: 500px;
+	width: 600px;
+}
+
+@media screen and (max-width: 700px) {
+	.content {
+		width: 80%;
+	}
+	.content img {
+		width: 300px;
+		height: 300px;
+	}
+	.content .name,
+	.content .track,
+	.content .day,
+	.content .time {
+		font-size: 27px;
+	}
+	.time {
+		width: fit-content;
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -170,6 +189,6 @@ main::after {
 		font-size: 20px;
 	}
 	.time {
-		width: 270px;
+		width: fit-content;
 	}
 }
