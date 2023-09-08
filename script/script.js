@@ -17,6 +17,7 @@ function updateUTCDay() {
 updateUTCTime();
 updateUTCDay();
 
+setInterval(updateUTCTime, 100);
 
 
 
