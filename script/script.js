@@ -1,10 +1,11 @@
-const dataDay = document.querySelector("p[data-testid='currentDayOfTheWeek']");
-const dataTime = document.querySelector("p[data-testid='currentUTCTime']");
+const dataDay = document.querySelector("[data-testid='currentDayOfTheWeek']");
+const dataTime = document.querySelector("[data-testid='currentUTCTime']");
 
+console.log(dataDay)
 function updateUTCTime() {
     const time = new Date().getTime();
-    currentTime.textContent = time
-} dataTime
+    dataTime.textContent = time
+}
 function updateUTCDay() {
     const options = {
         timeZone: 'UTC',
