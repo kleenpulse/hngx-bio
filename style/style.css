@@ -10,18 +10,6 @@ body {
 	background: #000a2d;
 	color: aliceblue;
 }
-@media screen and (max-width: 350px) {
-	body {
-		overflow-y: hidden;
-		overflow-x: scroll;
-	}
-}
-@media screen and (max-height: 821px) {
-	body {
-		overflow-y: scroll;
-		overflow-x: hidden;
-	}
-}
 
 main {
 	position: relative;
@@ -147,36 +135,4 @@ main::after {
 	display: flex;
 	justify-content: end;
 	padding-right: 1rem;
-}
-
-@media screen and (max-width: 700px) {
-	.content {
-		width: 80%;
-	}
-	.content img {
-		width: 300px;
-		height: 300px;
-	}
-	.content .name,
-	.content .track,
-	.content .day,
-	.content .time {
-		font-size: 27px;
-	}
-}
-
-@media screen and (max-width: 580px) {
-	.content img {
-		width: 200px;
-		height: 200px;
-	}
-	.content .name,
-	.content .track,
-	.content .day,
-	.content .time {
-		font-size: 20px;
-	}
-	.time {
-		width: fit-content;
-	}
 }
